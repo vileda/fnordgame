@@ -13,9 +13,9 @@ int main(void)
     Circle circleComp(.1f, (GLfloat*)RED);
     Circle circleComp2(.09f, (GLfloat*)BLUE);
 
-    go.addCompontent(&circleComp);
-    go.addCompontent(&circleComp2);
-    go.addCompontent([&] () {
+    go.addComponent(&circleComp);
+    go.addComponent(&circleComp2);
+    go.addComponent([&] () {
       glBegin(GL_QUADS);
         glVertex2d(0,0);
         glVertex2d(1,0);
